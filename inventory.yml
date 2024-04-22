@@ -14,3 +14,9 @@ all:
       vars:
         db_type: postgres
         db_port: 5432
+
+    local:
+      hosts:
+        localhost:
+      vars:
+        ansible_connection: local
