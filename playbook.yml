@@ -1,0 +1,9 @@
+---
+- name: Вывод зашифрованной переменной
+  hosts: localhost
+  gather_facts: no
+
+  tasks:
+    - name: Вывести значение переменной var1
+      debug:
+        msg: "Значение переменной var1: '{{ var1 }}'"
