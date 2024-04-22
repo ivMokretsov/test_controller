@@ -1,0 +1,16 @@
+all:
+  children:
+    web:
+      hosts:
+        web1.example.com:
+        web2.example.com:
+      vars:
+        http_port: 80
+        max_clients: 200
+
+    db:
+      hosts:
+        db1.example.com:
+      vars:
+        db_type: postgres
+        db_port: 5432
